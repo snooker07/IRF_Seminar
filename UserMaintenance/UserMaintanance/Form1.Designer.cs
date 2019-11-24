@@ -32,6 +32,7 @@
             this.lblFullName = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonWriteIntoFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -51,10 +52,10 @@
             this.lblFullName.TabIndex = 1;
             this.lblFullName.Text = "label1";
             // 
-            // txtFullname
+            // txtFullName
             // 
             this.txtFullName.Location = new System.Drawing.Point(327, 10);
-            this.txtFullName.Name = "txtFullname";
+            this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(194, 20);
             this.txtFullName.TabIndex = 3;
             // 
@@ -68,11 +69,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonWriteIntoFile
+            // 
+            this.buttonWriteIntoFile.Location = new System.Drawing.Point(216, 125);
+            this.buttonWriteIntoFile.Name = "buttonWriteIntoFile";
+            this.buttonWriteIntoFile.Size = new System.Drawing.Size(210, 40);
+            this.buttonWriteIntoFile.TabIndex = 6;
+            this.buttonWriteIntoFile.Text = "button2";
+            this.buttonWriteIntoFile.UseVisualStyleBackColor = true;
+            this.buttonWriteIntoFile.Click += new System.EventHandler(this.buttonWriteIntoFile_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonWriteIntoFile);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.lblFullName);
@@ -90,6 +102,7 @@
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonWriteIntoFile;
     }
 }
 
