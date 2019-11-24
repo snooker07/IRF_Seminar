@@ -19,8 +19,9 @@ namespace UserMaintanance
         {
             InitializeComponent();
             lblFullName.Text = Resource1.FullName; // label1
-            button1.Text = Resource1.Add; // button1
+            buttonAdd.Text = Resource1.Add; // button1
             buttonWriteIntoFile.Text = Resource1.WriteIntoFile; // button1
+            buttonDelete.Text = Resource1.DeleteSelected; // button1
 
             listUsers.DataSource = users;
             listUsers.ValueMember = "ID";
@@ -56,6 +57,16 @@ namespace UserMaintanance
                 }
             }
 
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (listUsers.SelectedItem == null)
+            {
+                return;
+            }
+            User u = (User)listUsers.SelectedItem;
+            users.Remove(u);
         }
     }
 }
